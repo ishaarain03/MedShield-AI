@@ -1,4 +1,5 @@
 MedShield-AI
+
 MedShield-AI is a machine learning project I created to predict the likelihood of heart disease based on a patient's medical data.
 I developed this project to understand how machine learning can be used in healthcare and to build a straightforward application that can give fast risk assessments. It is intended as an educational tool and is not meant for actual medical diagnosis.
 

@@ -61,7 +61,9 @@ The predictions provided should not be taken as medical advice and should not re
 ###  Author
 
 Isha Saleem
+
 Bachelor of Computer Science
+
 The Shaikh Ayaz University, Shikarpur
 
 ###  License

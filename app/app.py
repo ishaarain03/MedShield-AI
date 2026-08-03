@@ -61,15 +61,7 @@ with col1:
         ["Male", "Female"]
     )
 
-    dataset = st.selectbox(
-        "Dataset",
-        [
-            "Cleveland",
-            "Hungary",
-            "Switzerland",
-            "VA"
-        ]
-    )
+
 
     cp = st.selectbox(
         "Chest Pain Type",
@@ -99,6 +91,16 @@ with col1:
         "Fasting Blood Sugar >120",
         [False, True]
     )
+
+    thal = st.selectbox(
+            "Thal",
+            [
+                "normal",
+                "fixed defect",
+                "reversable defect"
+            ]
+        )
+    
 
 with col2:
 
@@ -146,15 +148,6 @@ with col2:
         0.0
     )
 
-    thal = st.selectbox(
-        "Thal",
-        [
-            "normal",
-            "fixed defect",
-            "reversable defect"
-        ]
-    )
-
 # =====================================================
 # Prediction
 # =====================================================
@@ -165,10 +158,8 @@ if st.button("🔍 Predict Heart Disease Risk"):
 
         input_data = pd.DataFrame({
 
-            "id": [1],
             "age": [age],
             "sex": [sex],
-            "dataset": [dataset],
             "cp": [cp],
             "trestbps": [trestbps],
             "chol": [chol],
@@ -185,7 +176,6 @@ if st.button("🔍 Predict Heart Disease Risk"):
 
         categorical_columns = [
             "sex",
-            "dataset",
             "cp",
             "fbs",
             "restecg",
@@ -283,7 +273,6 @@ Your prediction indicates a low likelihood of heart disease.
 
                 "Age",
                 "Sex",
-                "Dataset",
                 "Chest Pain",
                 "Blood Pressure",
                 "Cholesterol",
@@ -299,10 +288,9 @@ Your prediction indicates a low likelihood of heart disease.
             ],
 
             "Value": [
-
+               
                 age,
                 sex,
-                dataset,
                 cp,
                 trestbps,
                 chol,

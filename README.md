@@ -1,64 +1,116 @@
-MedShield-AI
+## Live Demo
 
-MedShield-AI is a machine learning project I created to predict the likelihood of heart disease based on a patient's medical data.
-I developed this project to understand how machine learning can be used in healthcare and to build a straightforward application that can give fast risk assessments. It is intended as an educational tool and is not meant for actual medical diagnosis.
+🔗 https://medshield-ai.streamlit.app
 
-The model used for prediction is a Random Forest Classifier trained on the UCI Heart Disease Dataset.
-Before training, I prepared the dataset by addressing missing values and converting categorical features into numerical formats. After this preprocessing step, I split the data into training and testing sets. The model performed with an accuracy of roughly 89% on the test set.
+## MedShield-AI
+AI-Powered Heart Disease Prediction System
 
-The application is developed using Streamlit, which makes it easy to use.
-Users can input the necessary patient information, click a button to get the prediction, and immediately see if the patient is classified as Low Risk or High Risk for heart disease. The app also shows the confidence level of the prediction, offers a brief health suggestion, and provides a summary of the entered information.
+MedShield-AI is a machine learning project developed to predict the likelihood of heart disease using patient medical data. The project demonstrates how machine learning can assist in healthcare by providing quick risk assessments based on clinical features. It is intended for educational and research purposes only and should not be used as a substitute for professional medical diagnosis.
 
-###  Features
+The prediction model is built using a Random Forest Classifier trained on the UCI Heart Disease Dataset. Before training, the dataset was preprocessed by handling missing values, encoding categorical features, and preparing the data for machine learning. The processed data was then divided into training and testing sets using an 80:20 split.
 
-- Heart disease risk prediction using machine learning
-- Simple and interactive user interface with Streamlit
-- Displays the confidence level of the prediction
-- Gives a basic health recommendation
-- Shows a summary of the patient's entered details
+The final model achieved an accuracy of approximately 82% on the test dataset.
 
-###  Project Structure
+The application is built with Streamlit, providing a simple and interactive interface. Users can enter patient information, generate a prediction, view the confidence score, receive a basic health recommendation, and review a summary of the entered information.
 
-```
+## Features
+
+  Heart disease risk prediction using Machine Learning
+  Random Forest Classifier
+  Prediction confidence score
+  Basic health recommendations
+  Patient information summary
+  Interactive Streamlit user interface
+
+## Dataset
+This project uses the UCI Heart Disease Dataset, which contains patient information such as:
+
+Age
+Sex
+Chest Pain Type
+Resting Blood Pressure
+Cholesterol
+Fasting Blood Sugar
+Resting ECG
+Maximum Heart Rate
+Exercise-Induced Angina
+Oldpeak
+Slope
+Number of Major Vessels (CA)
+Thalassemia
+
+## Technologies Used
+
+Python
+Pandas
+NumPy
+Scikit-learn
+Streamlit
+Joblib
+Matplotlib
+
+## Project Structure
+
 MedShield-AI/
-│── app.py
-│── models/
-│ ├── heart_disease_model.pkl
-│ └── feature_columns.pkl
-│── data/
-│ └── heart.csv
-│── notebook/
-│ └── Heart_Disease_Prediction.ipynb
-│── requirements.txt
-│── README.md
-```
+│
+├── app/
+│   └── app.py
+│
+├── data/
+│   └── heart_disease_uci.csv
+│
+├── models/
+│   ├── heart_disease_model.pkl
+│   └── encoders.pkl
+│
+├── notebooks/
+│   └── Heart_Disease_Prediction.ipynb
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
 
-###  How to Run
+## Model Performance
+Metric	Score
+Accuracy	82.07%
+Precision	82%
+Recall	82%
+F1 Score	82%
 
-1.
-Clone the repository.
-2.
-Create and activate a virtual environment.
-3.
-Install the required packages using `pip install -r requirements.txt`.
-4.
-Start the application by running:
+## How to Run
+1. Clone the repository
+git clone https://github.com/ishaarain03/MedShield-AI.git
+2. Move into the project directory
+cd MedShield-AI
+3. Create a virtual environment
+python -m venv .venv
+4. Activate the virtual environment
 
-```bash
-streamlit run app.py
-```
+Windows:
 
-###  Future Improvements
+.venv\Scripts\activate
 
-There are several ways this project could be enhanced in the future.
-Some ideas include training the model on more extensive datasets, experimenting with different machine learning or deep learning methods, incorporating user authentication, saving the history of predictions, and deploying the application online for global access.
+macOS/Linux:
 
-###  Disclaimer
+source .venv/bin/activate
+5. Install the required packages
+pip install -r requirements.txt
+6. Run the Streamlit application
+streamlit run app/app.py
 
-This project was developed for educational and research purposes only.
-The predictions provided should not be taken as medical advice and should not replace consultation with a qualified healthcare professional.
+## Future Improvements
+Improve prediction accuracy using hyperparameter tuning.
+Train on larger and more diverse healthcare datasets.
+Explore deep learning models.
+Store prediction history.
+Add user authentication.
+Deploy the application on cloud platforms.
 
-###  Author
+## Disclaimer
+
+This application is developed for educational and research purposes only. The predictions generated by the model should not be considered medical advice and must not replace consultation with qualified healthcare professionals.
+
+## Author
 
 Isha Saleem
 
@@ -66,6 +118,8 @@ Bachelor of Computer Science
 
 The Shaikh Ayaz University, Shikarpur
 
-###  License
+GitHub: https://github.com/ishaarain03
 
-This project is shared for academic and educational use.
+## License
+
+This project is released for academic and educational purposes.

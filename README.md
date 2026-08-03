@@ -47,17 +47,18 @@ Thalassemia
 
 ## Technologies Used
 
-Python
-Pandas
-NumPy
-Scikit-learn
-Streamlit
-Joblib
-Matplotlib
-
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Joblib
+- Matplotlib
+  
 
 ## Project Structure
 
+```text
 MedShield-AI/
 │
 ├── app/
@@ -76,17 +77,17 @@ MedShield-AI/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
 
 ## Model Performance
 
-
-Metric	                                      Score
-Accuracy	                                  82.07%
-Precision                                 	  82%
-Recall	                                      82%
-F1 Score	                                  82%
-
+| Metric | Score |
+|--------|-------|
+| Accuracy | **82.07%** |
+| Precision | **82%** |
+| Recall | **82%** |
+| F1 Score | **82%** |
 
 
 ## How to Run

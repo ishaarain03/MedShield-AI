@@ -16,7 +16,7 @@ The final model achieved an accuracy of approximately 82% on the test dataset.
 The application is built with Streamlit, providing a simple and interactive interface. Users can enter patient information, generate a prediction, view the confidence score, receive a basic health recommendation, and review a summary of the entered information.
 
 
-##Features
+## Features
   
     Heart disease risk prediction using Machine Learning
     Random Forest Classifier
@@ -95,14 +95,11 @@ MedShield-AI/
 1. Clone the repository
 git clone https://github.com/ishaarain03/MedShield-AI.git
 
-
 2. Move into the project directory
 cd MedShield-AI
 
-
 3. Create a virtual environment
 python -m venv .venv
-
 
 4. Activate the virtual environment
 
@@ -112,14 +109,11 @@ Windows:
 macOS/Linux:
 source .venv/bin/activate
 
-x
 5. Install the required packages
 pip install -r requirements.txt
 
-
 6. Run the Streamlit application
 streamlit run app/app.py
-
 
 
 ## Future Improvements

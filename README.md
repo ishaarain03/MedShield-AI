@@ -1,6 +1,6 @@
 ## Live Demo
 
-🔗 https://medshield-ai.streamlit.app
+https://medshield-ai-3zxemrgtvrv9cbqicxwsgp.streamlit.app/
 
 
 ## MedShield-AI
